@@ -33,7 +33,7 @@ mount --make-rslave /mnt/gentoo/sys
 mount --rbind /dev /mnt/gentoo/dev
 mount --make-rslave /mnt/gentoo/dev
 
-cp /gentoo_setup_afterchroot.bash /mnt/gentoo/gentoo_setup_afterchroot.bash 
-chroot /mnt/gentoo /bin/bash /gentoo_setup_afterchroot.bash
+cp /gentoo_installation_afterchroot.bash /mnt/gentoo/gentoo_installation_afterchroot.bash
+chroot /mnt/gentoo /bin/bash /gentoo_installation_afterchroot.bash
 
 reboot
