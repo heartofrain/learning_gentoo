@@ -6,7 +6,7 @@
 
 ### 使用方法
 
-**【警告】**：脚本会自动分区并格式化`/dev/sda`，严禁在宿主机中执行脚本。仅可在分配有新硬盘的虚拟机中尝试。
+**【警告】：脚本会自动分区并格式化`/dev/sda`，严禁在宿主机中执行脚本。仅可在分配有新硬盘的虚拟机中尝试。**
 
 step0、安装虚拟机，下载[gentoo安装媒介](https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Media)
 
@@ -18,8 +18,8 @@ step3、依次执行以下命令：
 
 ```bash
 wget https://github.com/heartofrain/learning_gentoo/archive/refs/heads/main.zip
-upzip main.zip
-cd learning_gentoo/installation_scripts
+unzip main.zip
+cd learning_gentoo-main/installation_scripts
 cp ./gentoo_installation_afterchroot.bash /gentoo_installation_afterchroot.bash
 cp ./gentoo_installation_beforechroot.bash /gentoo_installation_beforechroot.bash
 bash /gentoo_installation_beforechroot.bash
